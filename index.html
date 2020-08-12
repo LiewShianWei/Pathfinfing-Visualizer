@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'/>
+	<title>Pathfinding Visualizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+		<a class="navbar-brand" id="mainTitle"><img style="width: 60px;height: 55px;" src="https://clementmihailescu.github.io/Pathfinding-Visualizer/public/styling/c_icon.png"></img> Pathfinding Visualizer </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  	<span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<ul class="navbar-nav ml-auto" id="right-items">
+
+				<li class="nav-item dropdown px-4">
+					<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visualize <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#" onclick="depthFirstSearch()">Depth-first Search</a>
+						<a class="dropdown-item" href="#" onclick="breadthFirstSearch()">Breadth-first Search</a>
+						<a class="dropdown-item" href="#">Coming Soon</a>
+					</div>
+				</li>
+
+				<li class="nav-item px-4">
+					<a class="nav-link" href="#" id="reset" onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</a>
+				</li>
+
+				<li class="nav-item px-4">
+					<a class="nav-link" href="#" id="generateMaze" onclick="generateMaze()"><i class="fa fa-magic" aria-hidden="true"></i> Generate Maze</a>
+				</li>
+
+				<!-- Button trigger modal -->
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="howtoplay"  data-toggle="modal" data-target="#exampleModal"><i class="fa fa-question-circle" aria-hidden="true"></i> How To Play</a>
+				</li>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="welcome">Welcome to Pathfinding Visualizer!</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<h5>To Move Start / End Node</h5>
+								<p>Click on start/end nodes and select an empty node</p>
+								<hr>
+								<h5>To Add Walls</h5>
+								<p>Click on the grid to add a wall<br>Click and drag to add multiple walls</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</nav>
+	<hr id="mainLine" width="1500" style="height:1px;border:none;color: #e7ebed;background-color:#e7ebed;">
+	<canvas id='Canvas' width="1515" height="650"></canvas>
+	<br>
+
+	<script src="Pathfinding Visualizer.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+	
+</body>
+
+</html>

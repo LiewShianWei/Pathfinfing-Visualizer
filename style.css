@@ -1,0 +1,47 @@
+
+canvas {
+    position: absolute;
+    top: 13%;
+    left: 1.1%;    
+}
+
+
+#navbar {
+    height: 55px;
+    padding-top: 25px;
+
+}
+
+#mainTitle {
+    color: 	#273238;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 1%;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+#right-items {
+    color: #576e7b;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 5%;
+}
+
+#welcome, h5 {
+    color: #273238;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+p, .nav-item {
+    color: #273238;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mainLine {
+    height: 50px;
+}
