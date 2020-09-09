@@ -1,5 +1,5 @@
-let canvas
-let ctx
+let canvas;
+let ctx;
 let disableButton = false;
 let finishTransition = false;
 let running = false;
